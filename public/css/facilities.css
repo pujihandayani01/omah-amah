@@ -1,0 +1,113 @@
+
+/* ==============================
+   DAFTAR FASILITAS KOS
+================================ */
+
+.facility-management-card {
+    width: 100%;
+}
+
+.facility-table {
+    min-width: 650px;
+}
+
+.facility-table th:nth-child(1) {
+    width: 23%;
+}
+
+.facility-table th:nth-child(2) {
+    width: 43%;
+}
+
+.facility-table th:nth-child(3) {
+    width: 19%;
+}
+
+.facility-table th:nth-child(4) {
+    width: 15%;
+}
+
+.facility-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 150px;
+}
+
+.facility-name strong {
+    color: #263448;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.facility-icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    font-size: 19px;
+}
+
+.facility-icon-wifi {
+    background: #e8f2fc;
+    color: #4285bd;
+}
+
+.facility-icon-parking {
+    background: #e8f7ef;
+    color: #299764;
+}
+
+.facility-icon-kitchen {
+    background: #fff2e4;
+    color: #d68a32;
+}
+
+.facility-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 180px;
+}
+
+.facility-description > span {
+    color: #465367;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.facility-description > small {
+    max-width: 330px;
+    color: #929baa;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.facility-table td {
+    vertical-align: middle;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.facility-table .room-actions {
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .facility-management-card {
+        padding: 18px;
+    }
+
+    .facility-management-card .room-management-header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .facility-management-card .btn-add-room {
+        max-width: 100%;
+    }
+}

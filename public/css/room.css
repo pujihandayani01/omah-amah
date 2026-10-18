@@ -1,0 +1,480 @@
+
+/* ==============================
+   FORM DETAIL KAMAR
+================================ */
+
+.room-detail-card {
+    width: 100%;
+    padding: 26px;
+}
+
+.room-detail-header {
+    margin-bottom: 25px;
+}
+
+.room-detail-header .section-title {
+    margin-bottom: 7px;
+}
+
+.room-detail-header p {
+    margin: 0;
+    color: #929baa;
+    font-size: 13px;
+}
+
+/* Layout dua kolom */
+.room-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 20px;
+}
+
+.room-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.room-form-group > label {
+    color: #344054;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.room-form-control {
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 13px;
+    border: 1px solid #e0e5ec;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #263448;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.room-form-control::placeholder {
+    color: #a3acb9;
+}
+
+.room-form-control:focus {
+    border-color: #4a80a8;
+    box-shadow: 0 0 0 3px rgba(74, 128, 168, 0.12);
+}
+
+/* Input harga */
+.room-price-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.room-price-input > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 44px;
+    border: 1px solid #e0e5ec;
+    border-radius: 9px;
+    background: #f8fafc;
+    color: #667085;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.room-price-input .room-form-control {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Catatan abu-abu */
+.room-form-note {
+    margin: 14px 0 27px;
+    color: #929baa;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* Fasilitas */
+.room-form-section {
+    padding-top: 22px;
+    border-top: 1px solid #edf0f5;
+}
+
+.room-form-section h3 {
+    margin: 0 0 17px;
+    color: #263448;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.room-facility-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.room-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 46px;
+    padding: 12px;
+    border: 1px solid #e7ebf1;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #475467;
+    font-size: 12px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.room-checkbox:has(input:checked) {
+    border-color: #8bb1d0;
+    background: #f3f8fc;
+}
+
+.room-checkbox input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: #4a80a8;
+    cursor: pointer;
+}
+
+.room-checkbox span {
+    line-height: 1.5;
+}
+
+/* Status kamar */
+.room-status-field {
+    margin-top: 25px;
+    max-width: calc(50% - 10px);
+}
+
+/* Tombol form */
+.room-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid #edf0f5;
+}
+
+.room-btn-reset,
+.room-btn-save {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 42px;
+    padding: 10px 17px;
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.room-btn-reset {
+    border: 1px solid #e0e5ec;
+    background: #ffffff;
+    color: #667085;
+}
+
+.room-btn-reset:hover {
+    background: #f8fafc;
+}
+
+.room-btn-save {
+    border: 1px solid #0a1931;
+    background: #0a1931;
+    color: #ffffff;
+}
+
+.room-btn-save:hover {
+    background: #172d4d;
+}
+
+
+/* ==============================
+   FOTO DAN REFERENSI KAMAR
+================================ */
+
+.room-photo-card {
+    height: 100%;
+    padding: 24px;
+}
+
+.room-photo-header {
+    margin-bottom: 18px;
+}
+
+.room-photo-header .section-title {
+    margin-bottom: 7px;
+}
+
+.room-photo-header > p,
+.room-reference-header > p {
+    margin: 0;
+    color: #929baa;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Preview foto */
+.room-photo-preview {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #f0f3f7;
+}
+
+.room-photo-preview img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Area upload */
+.room-upload-area {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px dashed #cbd5e1;
+    border-radius: 11px;
+    background: #fafbfd;
+}
+
+.room-upload-icon {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: #e7f1fb;
+    color: #4a80a8;
+    font-size: 21px;
+}
+
+.room-upload-content {
+    min-width: 0;
+}
+
+.room-upload-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #263448;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.room-upload-button:hover {
+    color: #4a80a8;
+}
+
+.room-upload-content > p {
+    margin: 6px 0 0;
+    color: #929baa;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* Referensi kamar */
+.room-reference-section {
+    margin-top: 27px;
+    padding-top: 22px;
+    border-top: 1px solid #edf0f5;
+}
+
+.room-reference-header {
+    margin-bottom: 17px;
+}
+
+.room-reference-header h3 {
+    margin: 0 0 6px;
+    color: #263448;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Dua kolom */
+.room-reference-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.room-reference-item {
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #e8ecf2;
+    border-radius: 12px;
+    background: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.room-reference-item:hover {
+    border-color: #cbd9e6;
+    box-shadow: 0 4px 14px rgba(10, 25, 49, 0.04);
+}
+
+.room-reference-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    margin-bottom: 14px;
+}
+
+.room-reference-number {
+    color: #172033;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.room-reference-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #198754;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.room-reference-status > span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #22a06b;
+}
+
+.room-reference-unavailable {
+    color: #bd7919;
+}
+
+.room-reference-unavailable > span {
+    background: #e99a2b;
+}
+
+.room-reference-item h4 {
+    margin: 0 0 7px;
+    color: #536174;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.room-reference-price {
+    margin: 0;
+    color: #172033;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.room-reference-price span {
+    color: #929baa;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.room-reference-facilities {
+    min-height: 30px;
+    margin: 8px 0 13px;
+    color: #929baa;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.room-reference-edit {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 10px;
+    border: 1px solid #e1e6ed;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #536174;
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.room-reference-edit:hover {
+    border-color: #9bb8d0;
+    background: #f3f8fc;
+    color: #3d719b;
+}
+
+/* Responsif */
+@media (max-width: 1200px) {
+    .room-reference-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .room-photo-card {
+        padding: 18px;
+    }
+
+    .room-photo-preview {
+        height: 210px;
+    }
+
+    .room-reference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 420px) {
+    .room-reference-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .room-detail-card {
+        padding: 20px;
+    }
+
+    .room-form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .room-facility-options {
+        grid-template-columns: 1fr;
+    }
+
+    .room-status-field {
+        max-width: 100%;
+    }
+
+    .room-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .room-btn-reset,
+    .room-btn-save {
+        width: 100%;
+    }
+}

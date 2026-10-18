@@ -1,0 +1,398 @@
+
+/* ==============================
+   PROFIL INFORMASI KOS
+================================ */
+
+.kos-profile-card {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    border: 1px solid #edf0f5;
+    border-radius: 16px;
+    background: #ffffff;
+}
+
+/* Foto utama */
+.kos-profile-cover {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    background: #eef1f5;
+}
+
+.kos-profile-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 55%;
+}
+
+.kos-cover-label {
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 9px;
+    background: rgba(26, 37, 52, 0.78);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    backdrop-filter: blur(8px);
+}
+
+/* Konten profil */
+.kos-profile-content {
+    padding: 30px;
+}
+
+.kos-profile-heading {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.kos-profile-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 12px;
+    color: #5483a8;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+.kos-profile-heading h2 {
+    margin: 0 0 12px;
+    color: #263448;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.kos-profile-description {
+    max-width: 760px;
+    margin: 0;
+    color: #929baa;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+/* Alamat */
+.kos-profile-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 23px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.kos-profile-info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: #eef5fb;
+    color: #4a80a8;
+    font-size: 20px;
+}
+
+.kos-profile-address h3 {
+    margin: 2px 0 7px;
+    color: #263448;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.kos-profile-address p {
+    margin: 0;
+    color: #929baa;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Informasi harga */
+.kos-profile-price {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    padding: 22px;
+    border: 1px solid #e5edf5;
+    border-radius: 13px;
+    background: #f8fafc;
+}
+
+.kos-price-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50px;
+    height: 50px;
+    border-radius: 13px;
+    background: #e6f3eb;
+    color: #258653;
+    font-size: 22px;
+}
+
+.kos-price-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #929baa;
+    font-size: 12px;
+}
+
+.kos-price-value {
+    color: #263448;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.kos-price-value span {
+    color: #929baa;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.kos-price-content p {
+    margin: 5px 0 0;
+    color: #929baa;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   PERATURAN DAN JAM KUNJUNG
+================================ */
+
+.visit-rules-card {
+    height: 100%;
+    padding: 24px;
+}
+
+.visit-rules-header {
+    margin-bottom: 23px;
+}
+
+.visit-rules-header .section-title {
+    margin-bottom: 7px;
+    line-height: 1.5;
+}
+
+.visit-rules-header > p {
+    margin: 0;
+    color: #929baa;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* Peraturan kos */
+.visit-rules-content {
+    padding: 17px;
+    border: 1px solid #e8ecf2;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.visit-rules-title {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 15px;
+}
+
+.visit-rules-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #eaf2fb;
+    color: #4a80a8;
+    font-size: 19px;
+}
+
+.visit-rules-title h3 {
+    margin: 0 0 4px;
+    color: #263448;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.visit-rules-title span {
+    color: #929baa;
+    font-size: 10px;
+}
+
+.visit-rules-description {
+    padding-top: 13px;
+    border-top: 1px solid #edf0f5;
+}
+
+.visit-rules-description ul {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    margin: 0;
+    padding-left: 18px;
+    color: #687588;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.visit-rules-description li {
+    padding-left: 3px;
+}
+
+/* Input waktu */
+.visit-time-group {
+    margin-top: 20px;
+}
+
+.visit-time-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 9px;
+    color: #344256;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.visit-time-group label i {
+    color: #71849a;
+    font-size: 15px;
+}
+
+.visit-time-input {
+    display: block;
+    width: 100%;
+    min-height: 43px;
+    padding: 11px 13px;
+    border: 1px solid #e1e6ed;
+    border-radius: 9px;
+    outline: none;
+    background: #f8fafc;
+    color: #536174;
+    font-family: inherit;
+    font-size: 12px;
+    box-sizing: border-box;
+    opacity: 1;
+    -webkit-text-fill-color: #536174;
+}
+
+/* Catatan */
+.visit-rules-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 20px 0;
+    color: #929baa;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.visit-rules-note i {
+    margin-top: 2px;
+    color: #8c9bb0;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+/* Tombol edit */
+.visit-rules-actions {
+    padding-top: 17px;
+    border-top: 1px solid #edf0f5;
+}
+
+.visit-rules-edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 11px 16px;
+    border: 1px solid #dce5ee;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #3f6f95;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.visit-rules-edit-btn:hover {
+    background: #f2f7fb;
+    border-color: #b7cbdc;
+}
+
+@media (max-width: 768px) {
+    .visit-rules-card {
+        padding: 18px;
+    }
+}
+
+
+/* Responsif */
+@media (max-width: 768px) {
+    .kos-profile-cover {
+        height: 230px;
+    }
+
+    .kos-profile-content {
+        padding: 21px;
+    }
+
+    .kos-profile-heading h2 {
+        font-size: 21px;
+    }
+
+    .kos-profile-price {
+        align-items: flex-start;
+        gap: 12px;
+        padding: 17px;
+    }
+
+    .kos-price-value {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 420px) {
+    .kos-profile-cover {
+        height: 190px;
+    }
+
+    .kos-profile-content {
+        padding: 16px;
+    }
+
+    .kos-cover-label {
+        left: 13px;
+        bottom: 13px;
+        font-size: 11px;
+    }
+
+    .kos-price-icon {
+        flex-basis: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
